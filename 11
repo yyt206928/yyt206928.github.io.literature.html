@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>个人主页 / Personal Homepage</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; color: #222; padding: 0 10px;}
+    .lang-btn { float: right; margin: 15px 0; }
+    h1 { color: #2457aa; }
+    .info { margin-bottom: 20px; }
+    .section { margin-bottom: 25px; }
+    .last-updated { color: #888; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <button class="lang-btn" onclick="toggleLanguage()">
+    English
+  </button>
+  <h1 id="name">张三</h1>
+  <div class="info">
+    <span id="school">××大学 统计学</span> |
+    <span id="direction">研究兴趣：数据分析、计量经济</span> |
+    <span id="email">邮件: zhangsan@email.com</span>
+  </div>
+  <div class="section" id="profile">
+    <h2>个人简介</h2>
+    <p>热衷于数据分析与统计建模，有Python、R语言等编程经验。善于将理论应用于实际问题，具备良好的团队协作能力。</p>
+  </div>
+  <div class="section" id="skills">
+    <h2>技能</h2>
+    <ul>
+      <li>Python、R、SQL</li>
+      <li>数据分析、统计建模</li>
+      <li>学术写作、报告撰写</li>
+    </ul>
+  </div>
+  <div class="section" id="edu">
+    <h2>教育经历/课程经历</h2>
+    <ul>
+      <li>2022-2026 ××大学 统计学 本科</li>
+      <li>主要课程：高等数学、概率论、计量经济学、数据挖掘</li>
+    </ul>
+  </div>
+  <div class="last-updated" id="updated">最后更新日期：<span id="date"></span></div>
+
+  <!-- 英文内容，默认隐藏 -->
+  <div id="en-content" style="display:none">
+    <h1 id="en-name">Zhang San</h1>
+    <div class="info">
+      <span id="en-school">XX University, Statistics</span> |
+      <span id="en-direction">Research Interests: Data Analysis, Econometrics</span> |
+      <span id="en-email">Email: zhangsan@email.com</span>
+    </div>
+    <div class="section" id="en-profile">
+      <h2>Profile</h2>
+      <p>Passionate about data analysis and statistical modeling, experienced in Python and R programming. Skilled at applying theory to real-world problems and a strong team player.</p>
+    </div>
+    <div class="section" id="en-skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python, R, SQL</li>
+        <li>Data Analysis, Statistical Modeling</li>
+        <li>Academic Writing, Reporting</li>
+      </ul>
+    </div>
+    <div class="section" id="en-edu">
+      <h2>Education/Courses</h2>
+      <ul>
+        <li>2022-2026 XX University, BSc in Statistics</li>
+        <li>Main courses: Advanced Mathematics, Probability Theory, Econometrics, Data Mining</li>
+      </ul>
+    </div>
+    <div class="last-updated" id="en-updated">Last updated: <span id="en-date"></span></div>
+  </div>
+
+  <script>
+  // 设置最后更新日期
+  document.getElementById('date').textContent = new Date().toISOString().split('T')[0];
+  document.getElementById('en-date').textContent = new Date().toISOString().split('T')[0];
+
+  // 语言切换
+  let zh_visible = true;
+  function toggleLanguage() {
+    zh_visible = !zh_visible;
+    document.body.dir = zh_visible ? 'ltr' : 'ltr';
+    document.querySelector('button.lang-btn').textContent = zh_visible ? 'English' : '中文';
+    [...document.body.children].forEach(el => {
+      if (el.id === 'en-content' || el.id === 'name' || el.className === 'info' || el.className === 'section' || el.className === 'last-updated')
+        el.style.display = zh_visible ? (el.id === 'en-content' ? 'none' : '') : (el.id === 'en-content' ? '' : 'none');
+    });
+  }
+  </script>
+</body>
+</html>

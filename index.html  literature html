@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跨境电商与会计领域文献综述</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f5f7fa;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        header h1 { font-size: 2.2rem; margin-bottom: 1rem; }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 1.8rem;
+            margin-bottom: 1.8rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-2px); }
+        .literature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .paper-card {
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem;
+            border-left: 4px solid #667eea;
+        }
+        .paper-card h3 { color: #667eea; margin-bottom: 0.8rem; }
+        .tag {
+            display: inline-block;
+            background: #e9ecef;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin: 0.5rem 0.3rem 0 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th { background: #f8f9fa; }
+        .comparison-matrix {
+            overflow-x: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .container { padding: 1rem; }
+            header h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 跨境电商与会计领域文献综述</h1>
+            <p>基于四篇核心文献的系统性分析 | 2024-2026</p>
+        </header>
+
+        <!-- 文献卡片网格 -->
+        <h2>📄 四篇核心文献</h2>
+        <div class="literature-grid">
+            <div class="paper-card">
+                <h3>🏨 欧钟慧等 (2026)</h3>
+                <p><strong>会计信息披露、机构投资引入与旅游企业可持续发展</strong></p>
+                <p>实证研究 | 2007-2022年旅游上市公司</p>
+                <div><span class="tag">会计信息披露</span><span class="tag">可持续发展</span><span class="tag">机构投资者</span></div>
+            </div>
+            <div class="paper-card">
+                <h3>🛒 娄若敬 (2026)</h3>
+                <p><strong>会计数字化背景下电商企业内部控制优化探究</strong></p>
+                <p>理论分析 | COSO框架</p>
+                <div><span class="tag">会计数字化</span><span class="tag">内部控制</span><span class="tag">电商企业</span></div>
+            </div>
+            <div class="paper-card">
+                <h3>⚙️ 张敏 (2026)</h3>
+                <p><strong>科技赋能视域下财务会计转型升级的方向与策略研究</strong></p>
+                <p>理论分析 | 智慧财务</p>
+                <div><span class="tag">科技赋能</span><span class="tag">财务会计转型</span><span class="tag">管理会计</span></div>
+            </div>
+            <div class="paper-card">
+                <h3>🌐 付静丽 (2026)</h3>
+                <p><strong>跨境电商物流成本的税务筹划与会计处理协同探讨</strong></p>
+                <p>案例研究 | B公司实践</p>
+                <div><span class="tag">跨境电商</span><span class="tag">税务筹划</span><span class="tag">会计处理</span></div>
+            </div>
+        </div>
+
+        <!-- 综合对比表 -->
+        <div class="card">
+            <h2>📊 四篇文献综合对比</h2>
+            <div class="comparison-matrix">
+                <table>
+                    <thead><tr><th>维度</th><th>欧钟慧等(2026)</th><th>娄若敬(2026)</th><th>张敏(2026)</th><th>付静丽(2026)</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>研究主题</td><td>会计信息披露→旅游企业可持续发展</td><td>会计数字化→电商企业内部控制优化</td><td>科技赋能→财务会计转型升级</td><td>税务筹划与会计处理协同→跨境电商物流成本</td></tr>
+                        <tr><td>理论框架</td><td>信息不对称理论+中介效应模型</td><td>COSO内部控制框架</td><td>科技赋能理论+智慧财务</td><td>协同理论+三维协同框架</td></tr>
+                        <tr><td>核心发现</td><td>AIQ促进EWS(0.039***)；非国企效应更强</td><td>传统内控五大失效；提出"控制即代码"</td><td>科技应用深度不足；复合型人才需求年增25%</td><td>三维协同使物流成本28%→18%</td></tr>
+                        <tr><td>实践价值</td><td>非国企应重视信息披露吸引机构投资</td><td>电商企业内控数字化革命的操作指南</td><td>财务人员转型路径+分阶段实施方案</td><td>跨境电商成本管控的可复制范式</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 核心发现 -->
+        <div class="card">
+            <h2>🔍 核心研究发现</h2>
+            <ul>
+                <li><strong>欧钟慧等</strong>：高质量会计信息披露显著促进旅游企业可持续发展，机构投资者发挥中介作用，非国有企业中促进作用更显著（系数0.059 vs 0.018）</li>
+                <li><strong>娄若敬</strong>：电商企业内控面临五大挑战（传统手段失效、文化滞后、新型风险频发、数据集成滞后、监督体系不健全），提出"控制即代码"优化路径</li>
+                <li><strong>张敏</strong>：复合型财务人才需求年均增长25%，财务人员必须主动学习大数据、AI等新技术</li>
+                <li><strong>付静丽</strong>：三维协同机制（组织+数据+系统）使物流成本占比从28%降至18%，每年节省约228万欧元增值税</li>
+            </ul>
+        </div>
+
+        <!-- 研究框架图 -->
+        <div class="card">
+            <h2>🏗️ 理论框架整合</h2>
+            <pre style="background:#f8f9fa; padding:1rem; border-radius:8px; overflow-x:auto;">
+科技赋能（共同背景）
+    ├── 信息披露质量（欧钟慧）→ 机构投资者 → 可持续发展
+    ├── 内部控制优化（娄若敬）→ COSO框架 + 数字化
+    ├── 财务会计转型（张敏）→ 核算型 → 智慧管理型
+    └── 税务会计协同（付静丽）→ 组织+数据+系统协同
+            </pre>
+        </div>
+
+        <footer>
+            <p>📅 文献综述生成于 2026年 | 基于四篇核心文献的系统分析</p>
+            <p>文献来源：《财会通讯》《财会月刊》《中国企业经营管理知识仓库》等</p>
+        </footer>
+    </div>
+</body>
+</html>
